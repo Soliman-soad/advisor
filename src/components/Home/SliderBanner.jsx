@@ -14,12 +14,13 @@ const SliderBanner = () => {
         autoplaySpeed: 6000
       };
     return (
-        <Slider {...settings}>
-          <div>
+        <Slider {...settings} className='-z-10'>
+          {/* slider 1 */}
+          <div className='relative'>
+            <div className='absolute w-full h-full'>
+
+            </div>
           <div className="bg-cover bg-no-repeat"
-          style={{
-            backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url(https://img.freepik.com/free-photo/businesspeople-meeting-plan-analysis-graph-company-finance-strat_74952-1347.jpg?size=626&ext=jpg&ga=GA1.2.31902201.1666701009&semt=robertav1)"
-          }}
           >
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
@@ -88,11 +89,12 @@ const SliderBanner = () => {
       </div>
     </div>
           </div>
-          <div>
+          {/* slider 2 */}
+          <div className='relative'>
+            <div className='absolute w-full h-full'>
+
+            </div>
           <div className="bg-cover bg-no-repeat"
-          style={{
-            backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url(https://img.freepik.com/free-photo/businesspeople-meeting-plan-analysis-graph-company-finance-strat_74952-1400.jpg?size=626&ext=jpg&ga=GA1.2.31902201.1666701009&semt=robertav1)"
-          }}
           >
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
@@ -161,11 +163,12 @@ const SliderBanner = () => {
       </div>
     </div>
           </div>
-          <div>
+          {/* slider 3 */}
+          <div className='relative'>
+            <div className='absolute w-full h-full'>
+
+            </div>
           <div className="bg-cover bg-no-repeat"
-          style={{
-            backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url(https://img.freepik.com/free-photo/startup-business-teamwork-meeting-concept_1421-194.jpg?size=626&ext=jpg&ga=GA1.2.31902201.1666701009&semt=robertav1)"
-          }}
           >
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
