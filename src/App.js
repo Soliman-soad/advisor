@@ -5,6 +5,7 @@ import SliderBanner from './components/Home/SliderBanner';
 import About from './components/Home/About';
 import Expert from './components/Home/Expert';
 import HomeServices from './components/Home/HomeServices';
+import ServiceDetails from './components/Services/ServiceDetails';
 
 
 function App() {
@@ -13,10 +14,7 @@ function App() {
       <div className='sticky top-5'>        
       <Nav/>
       </div>
-      <SliderBanner/>
-      <About/>
-      <Expert/>
-      <HomeServices/>
+      <ServiceDetails/>
       <Footer/>
     </div>
   );
