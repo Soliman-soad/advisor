@@ -4,7 +4,7 @@ import Comment from './Comment';
 
 const ServiceDetails = () => {
     return (
-        <div>
+        <div className='md:px-0 px-5'>
             {/* service type title */}
             <div className='h-screen relative'>
                 <div className='absolute w-full h-full -z-10 object-cover'>
@@ -18,11 +18,11 @@ const ServiceDetails = () => {
             </div>
 
             {/* service detail */}
-            <div className='grid grid-cols-12 gap-10 my-20'>
+            <div className='md:grid grid-cols-12 gap-10 my-20'>
 
 
             {/* practice areas and advertise  */}
-            <div className='col-span-3 space-y-5'>
+            <div className='md:block hidden col-span-3 space-y-5'>
             <ul>
                 <h1 className='text-lg font-semibold'>Practice Areas</h1>
                 <li>Corporate and Securities</li>
@@ -85,7 +85,7 @@ These apps run on a custom built blockchain, an enormously powerful shared globa
                 {/* process and plan */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-10 my-10'>
                 <div>
-                    <img src="https://img.freepik.com/free-photo/facade-old-building-with-columns-new-york-stock-exchange_23-2148184273.jpg?w=740&t=st=1680712081~exp=1680712681~hmac=d1ec7fe767871ee300f9a8109ee2db9f399f78f02eea02fdfa74d6618698ec7e" className='w-[380px] h-[400px] md:w-full md:h-full' alt="" />
+                    <img src="https://img.freepik.com/free-photo/facade-old-building-with-columns-new-york-stock-exchange_23-2148184273.jpg?w=740&t=st=1680712081~exp=1680712681~hmac=d1ec7fe767871ee300f9a8109ee2db9f399f78f02eea02fdfa74d6618698ec7e" className='max-w-[380px] max-h-[400px] md:max-h-full md:max-w-full md:w-full md:h-full mx-auto' alt="" />
                 </div>
                 <div className='space-y-5'>
                     <h1 className='text-2xl text-yellow-600 font-semibold font-serif'>Our Process</h1>

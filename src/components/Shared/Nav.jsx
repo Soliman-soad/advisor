@@ -5,25 +5,25 @@ export const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   
     return (
-      <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 opacity-80 bg-cyan-900">
+      <div className="px-4 py-5 mx-auto  md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-cyan-900/80 fixed w-full top-0 z-50">
         <div className="relative flex items-center justify-between">
           <a
             href="/"
             aria-label="Company"
             title="Company"
-            className="inline-flex items-center text-3xl"
+            className="inline-flex items-center text-3xl text-white"
             
           >
             <FaDraftingCompass/>
             <span>dviser</span>
           </a>
-          <ul className="flex items-center hidden space-x-8 lg:flex">
+          <ul className="items-center hidden space-x-8 lg:flex">
             <li>
               <a
                 href="/"
                 aria-label="Our product"
                 title="Our product"
-                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
                 Product
               </a>
@@ -33,7 +33,7 @@ export const Nav = () => {
                 href="/"
                 aria-label="Our product"
                 title="Our product"
-                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
                 Features
               </a>
@@ -43,7 +43,7 @@ export const Nav = () => {
                 href="/"
                 aria-label="Product pricing"
                 title="Product pricing"
-                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
                 Pricing
               </a>
@@ -53,7 +53,7 @@ export const Nav = () => {
                 href="/"
                 aria-label="About us"
                 title="About us"
-                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
                 About us
               </a>
@@ -63,7 +63,7 @@ export const Nav = () => {
             <li>
               <a
                 href="/"
-                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-slate-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
                 aria-label="Sign up"
                 title="Sign up"
               >

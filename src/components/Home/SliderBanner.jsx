@@ -5,238 +5,49 @@ import "slick-carousel/slick/slick-theme.css";
 
 const SliderBanner = () => {
     const settings = {
-        dots: true,
+      fade: true,
         infinite: true,
-        speed: 1000,
+        speed: 4000,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 6000
+        autoplaySpeed: 9000
       };
     return (
         <Slider {...settings} className='-z-10'>
           {/* slider 1 */}
-          <div className='relative'>
-            <div className='absolute w-full h-full'>
-
+          <div className='relative h-screen'>
+          <div className='absolute w-full h-full -z-10'>
+            <img src="https://img.freepik.com/free-photo/facade-old-building-with-columns-new-york-stock-exchange_23-2148184273.jpg?w=740&t=st=1680712081~exp=1680712681~hmac=d1ec7fe767871ee300f9a8109ee2db9f399f78f02eea02fdfa74d6618698ec7e" className=' w-full h-full object-cover' alt="" />
             </div>
-          <div className="bg-cover bg-no-repeat"
-          >
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
-          <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
-            <a href="/" className="mb-6 sm:mx-auto">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-teal-accent-400">
-                <svg
-                  className="w-10 h-10 text-deep-purple-900"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </a>
-            <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
-                <span className="relative inline-block">
-                  <svg
-                    viewBox="0 0 52 24"
-                    fill="currentColor"
-                    className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-deep-purple-accent-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-                  >
-                    <defs>
-                      <pattern
-                        id="700c93bf-0068-4e32-aafe-ef5b6a647708"
-                        x="0"
-                        y="0"
-                        width=".135"
-                        height=".30"
-                      >
-                        <circle cx="1" cy="1" r=".7" />
-                      </pattern>
-                    </defs>
-                    <rect
-                      fill="url(#700c93bf-0068-4e32-aafe-ef5b6a647708)"
-                      width="52"
-                      height="24"
-                    />
-                  </svg>
-                  <span className="relative">The</span>
-                </span>{' '}
-                quick, brown fox jumps over a lazy dog
-              </h2>
-              <p className="text-base text-indigo-100 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque rem aperiam, eaque ipsa quae.
-              </p>
+          <div className="bg-slate-900/80 w-full h-full text-white flex flex-col justify-center p-10 md:p-20 space-y-5" >
+            <h1 className='text-2xl md:text-7xl font-semibold'>
+              Advisor the law firm
+              <div className='w-20 border-b-4 border-white mt-5'></div>
+              </h1>
+            <div className='space-y-3'>
+              <p className='md:text-xl'>We are a leading law firm in financial and business. With more than 15 years of experience. </p>
+              <button className='bg-white text-slate-900 text-xl font-semibold px-4 py-2 rounded-md'>Contact us</button>
             </div>
-            <div>
-              <a
-                href="/"
-                className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 rounded shadow-md hover:text-deep-purple-900 bg-teal-accent-400 hover:bg-deep-purple-accent-100 focus:shadow-outline focus:outline-none"
-              >
-                Get started
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
           </div>
           {/* slider 2 */}
-          <div className='relative'>
-            <div className='absolute w-full h-full'>
-
+          <div className='relative h-screen'>
+          <div className='absolute w-full h-full -z-10'>
+            <img src="https://img.freepik.com/free-photo/facade-old-building-with-columns-new-york-stock-exchange_23-2148184273.jpg?w=740&t=st=1680712081~exp=1680712681~hmac=d1ec7fe767871ee300f9a8109ee2db9f399f78f02eea02fdfa74d6618698ec7e" className=' w-full h-full object-cover' alt="" />
             </div>
-          <div className="bg-cover bg-no-repeat"
-          >
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
-          <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
-            <a href="/" className="mb-6 sm:mx-auto">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-teal-accent-400">
-                <svg
-                  className="w-10 h-10 text-deep-purple-900"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </a>
-            <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
-                <span className="relative inline-block">
-                  <svg
-                    viewBox="0 0 52 24"
-                    fill="currentColor"
-                    className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-deep-purple-accent-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-                  >
-                    <defs>
-                      <pattern
-                        id="700c93bf-0068-4e32-aafe-ef5b6a647708"
-                        x="0"
-                        y="0"
-                        width=".135"
-                        height=".30"
-                      >
-                        <circle cx="1" cy="1" r=".7" />
-                      </pattern>
-                    </defs>
-                    <rect
-                      fill="url(#700c93bf-0068-4e32-aafe-ef5b6a647708)"
-                      width="52"
-                      height="24"
-                    />
-                  </svg>
-                  <span className="relative">The</span>
-                </span>{' '}
-                quick, brown fox jumps over a lazy dog
-              </h2>
-              <p className="text-base text-indigo-100 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque rem aperiam, eaque ipsa quae.
-              </p>
+          <div className="bg-slate-900/80 w-full h-full text-white flex flex-col justify-center p-10 md:p-20 space-y-5" >
+            <h1 className='text-2xl md:text-7xl font-semibold'>
+              Professional law firm
+              <div className='w-20 border-b-4 border-white mt-5'></div>
+              </h1>
+            <div className='space-y-3'>
+              <p className='md:text-xl'>We are a leading law firm in financial and business. With more than 15 years of experience. </p>
+              <button className='bg-white text-slate-900 text-xl font-semibold px-4 py-2 rounded-md'>Contact us</button>
             </div>
-            <div>
-              <a
-                href="/"
-                className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 rounded shadow-md hover:text-deep-purple-900 bg-teal-accent-400 hover:bg-deep-purple-accent-100 focus:shadow-outline focus:outline-none"
-              >
-                Get started
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
           </div>
-          {/* slider 3 */}
-          <div className='relative'>
-            <div className='absolute w-full h-full'>
-
-            </div>
-          <div className="bg-cover bg-no-repeat"
-          >
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
-          <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
-            <a href="/" className="mb-6 sm:mx-auto">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-teal-accent-400">
-                <svg
-                  className="w-10 h-10 text-deep-purple-900"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </a>
-            <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
-                <span className="relative inline-block">
-                  <svg
-                    viewBox="0 0 52 24"
-                    fill="currentColor"
-                    className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-deep-purple-accent-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-                  >
-                    <defs>
-                      <pattern
-                        id="700c93bf-0068-4e32-aafe-ef5b6a647708"
-                        x="0"
-                        y="0"
-                        width=".135"
-                        height=".30"
-                      >
-                        <circle cx="1" cy="1" r=".7" />
-                      </pattern>
-                    </defs>
-                    <rect
-                      fill="url(#700c93bf-0068-4e32-aafe-ef5b6a647708)"
-                      width="52"
-                      height="24"
-                    />
-                  </svg>
-                  <span className="relative">The</span>
-                </span>{' '}
-                quick, brown fox jumps over a lazy dog
-              </h2>
-              <p className="text-base text-indigo-100 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque rem aperiam, eaque ipsa quae.
-              </p>
-            </div>
-            <div>
-              <a
-                href="/"
-                className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 rounded shadow-md hover:text-deep-purple-900 bg-teal-accent-400 hover:bg-deep-purple-accent-100 focus:shadow-outline focus:outline-none"
-              >
-                Get started
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-          </div>
+         
         </Slider>
         
     );
