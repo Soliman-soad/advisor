@@ -1,11 +1,12 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaDraftingCompass } from "react-icons/fa";
+import { StateManage } from "../../Context/StateContext";
 
 export const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
+    const{setFormOpen} = useContext(StateManage) 
     return (
-      <div className="px-4 py-5 mx-auto  md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-cyan-900/80 fixed w-full top-0 z-50">
+      <div className="px-4 py-5 mx-auto  md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 bg-slate-800/80 fixed w-full top-0 z-50">
         <div className="relative flex items-center justify-between">
           <a
             href="/"
@@ -59,16 +60,16 @@ export const Nav = () => {
               </a>
             </li>
           </ul>
-          <ul className="flex items-center hidden space-x-8 lg:flex">
-            <li>
-              <a
-                href="/"
-                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-slate-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
+          <ul className=" items-center hidden space-x-8 lg:flex">
+            <li >
+              <button
+              onClick={()=>setFormOpen(true)}
+                className="inline-flex cursor-pointer items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-slate-400 hover:bg-white hover:text-slate-800 focus:shadow-outline focus:outline-none"
                 aria-label="Sign up"
                 title="Sign up"
               >
                 Sign up
-              </a>
+              </button>
             </li>
           </ul>
           <div className="lg:hidden">
@@ -78,7 +79,7 @@ export const Nav = () => {
               className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
               onClick={() => setIsMenuOpen(true)}
             >
-              <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
+              <svg className="w-5 text-white" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
                   d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
@@ -172,7 +173,7 @@ export const Nav = () => {
                       <li>
                         <a
                           href="/"
-                          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-slate-600 focus:shadow-outline focus:outline-none"
                           aria-label="Sign up"
                           title="Sign up"
                         >

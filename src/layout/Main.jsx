@@ -7,7 +7,7 @@ const Main = () => {
     return (
         <div>
             <Nav/>
-            <div className='md:mt-24'>
+            <div className='lg:mt-[5.5rem]'>
             <Outlet/>
             </div>
             <Footer/>

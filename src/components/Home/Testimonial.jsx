@@ -13,7 +13,7 @@ const Testimonial = () => {
         };
         
     return (
-        <div className='relative rounded-xl overflow-hidden'>
+        <div className='relative rounded-xl overflow-hidden w-11/12 mx-auto'>
           <div className='absolute w-full h-full -z-10'>
             <img src="https://img.freepik.com/free-photo/facade-old-building-with-columns-new-york-stock-exchange_23-2148184273.jpg?w=740&t=st=1680712081~exp=1680712681~hmac=d1ec7fe767871ee300f9a8109ee2db9f399f78f02eea02fdfa74d6618698ec7e" className=' w-full h-full object-cover' alt="" />
             </div>
@@ -32,8 +32,13 @@ const Testimonial = () => {
             <div>
                 <FaCertificate className='mx-auto text-6xl'/>
             </div>
+            
             <p className='text-center text-lg'>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary,</p>
+  
             <div className='text-center'>
+              <div>
+              <img src="https://img.freepik.com/free-photo/facade-old-building-with-columns-new-york-stock-exchange_23-2148184273.jpg?w=740&t=st=1680712081~exp=1680712681~hmac=d1ec7fe767871ee300f9a8109ee2db9f399f78f02eea02fdfa74d6618698ec7e" alt="" className='w-16 h-16 object-cover rounded-full mx-auto my-5'/>
+            </div>
             <h3 className='text-2xl font-serif font-semibold'>Mark justin</h3>
             <h2 className='text-lg'>CEO of Reddit</h2>
             </div>
@@ -45,6 +50,9 @@ const Testimonial = () => {
           <FaCertificate className='mx-auto text-6xl'/>
             <p className='text-center text-lg'>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary,</p>
             <div className='text-center'>
+              <div>
+              <img src="https://img.freepik.com/free-photo/facade-old-building-with-columns-new-york-stock-exchange_23-2148184273.jpg?w=740&t=st=1680712081~exp=1680712681~hmac=d1ec7fe767871ee300f9a8109ee2db9f399f78f02eea02fdfa74d6618698ec7e" alt="" className='w-16 h-16 object-cover rounded-full mx-auto my-5'/>
+            </div>
             <h3 className='text-2xl font-serif font-semibold'>Mark justin</h3>
             <h2 className='text-lg'>CEO of Reddit</h2>
             </div>
@@ -56,6 +64,9 @@ const Testimonial = () => {
           <FaCertificate className='mx-auto text-6xl'/>
             <p className='text-center text-lg'>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary,</p>
             <div className='text-center'>
+              <div>
+              <img src="https://img.freepik.com/free-photo/facade-old-building-with-columns-new-york-stock-exchange_23-2148184273.jpg?w=740&t=st=1680712081~exp=1680712681~hmac=d1ec7fe767871ee300f9a8109ee2db9f399f78f02eea02fdfa74d6618698ec7e" alt="" className='w-16 h-16 object-cover rounded-full mx-auto my-5'/>
+            </div>
             <h3 className='text-2xl font-serif font-semibold'>Mark justin</h3>
             <h2 className='text-lg'>CEO of Reddit</h2>
             </div>

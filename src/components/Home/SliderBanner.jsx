@@ -14,6 +14,7 @@ const SliderBanner = () => {
         autoplaySpeed: 9000
       };
     return (
+      <div>
         <Slider {...settings} className='-z-10'>
           {/* slider 1 */}
           <div className='relative h-screen'>
@@ -49,6 +50,7 @@ const SliderBanner = () => {
           </div>
          
         </Slider>
+      </div>
         
     );
 };
