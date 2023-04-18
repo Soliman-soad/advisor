@@ -37,18 +37,18 @@ const Contact = () => {
 				</p>
 			</div>
 		</div>
-		<div  className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
+		<div  className="flex flex-col py-6 space-y-6 md:py-0 md:pl-6">
 			<label className="block">
 				<span className="mb-1">Full name</span>
-				<input type="text" name='name' placeholder="name" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 p-3" />
+				<input type="text" name='name' placeholder="name" className="block w-full rounded-md shadow-sm p-3" />
 			</label>
 			<label className="block">
 				<span className="mb-1">Email address</span>
-				<input type="email" name='email' placeholder="email" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 p-3" />
+				<input type="email" name='email' placeholder="email" className="block w-full rounded-md shadow-sm  p-3" />
 			</label>
 			<label className="block">
 				<span className="mb-1">Message</span>
-				<textarea rows="3" name='message' className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-slate-400 p-3 "></textarea>
+				<textarea rows="3" name='message' className="block w-full rounded-md p-3 "></textarea>
 			</label>
 			<button  className="self-center px-8 py-3 font-medium tracking-wide hover:text-white text-gray-800 transition duration-200 rounded shadow-md bg-white hover:bg-slate-500 focus:shadow-outline focus:outline-none">Submit</button>
 		</div>

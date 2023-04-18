@@ -3,6 +3,7 @@ import { FaDraftingCompass } from 'react-icons/fa';
 import { StateManage } from '../../Context/StateContext';
 import { VscAccount } from "react-icons/vsc";
 import { RiLockPasswordFill } from "react-icons/ri";
+import { MdPassword } from "react-icons/md";
 
 const Login = () => {
     const{setFormOpen} = useContext(StateManage);
@@ -11,8 +12,8 @@ const Login = () => {
     return (
         <div  className=' fixed top-0 w-full h-screen mx-auto bg-slate-800/90 z-50' >
         <div className='mx-auto max-w-md relative bg-slate-100/60 items-center rounded-md group '>    
-            <div className='absolute w-full h-full  -z-10'>
-            <img src="https://img.freepik.com/free-photo/facade-old-building-with-columns-new-york-stock-exchange_23-2148184273.jpg?w=740&t=st=1680712081~exp=1680712681~hmac=d1ec7fe767871ee300f9a8109ee2db9f399f78f02eea02fdfa74d6618698ec7e" className=' w-full h-full object-cover opacity-50' alt="" />
+            <div className='absolute w-full h-full  -z-10 rounded-md'>
+            <img src="https://img.freepik.com/free-photo/facade-old-building-with-columns-new-york-stock-exchange_23-2148184273.jpg?w=740&t=st=1680712081~exp=1680712681~hmac=d1ec7fe767871ee300f9a8109ee2db9f399f78f02eea02fdfa74d6618698ec7e" className=' w-full h-full object-cover opacity-50 rounded-md' alt="" />
             </div>
         <div className="w-full max-w-md  p-8 space-y-3 rounded-xl mx-auto shadow-lg mt-10 border group">
         <h2  className='text-right font-bold text-xl'><span onClick={()=>setFormOpen(false)} className='cursor-pointer'>X</span></h2>
@@ -35,13 +36,24 @@ const Login = () => {
           <div className="space-y-1 text-sm">
               
           <div className="flex items-center bg-white rounded-full px-2">
-                <RiLockPasswordFill className="text-xl" />
+                <MdPassword className="text-xl" />
 			<input type="password" name="password" id="password" placeholder="Enter your Password" className="w-full px-4 py-3 rounded-full bg-white text-gray-800  outline-none active:bg-white" />
             </div>
+         
               <div className="flex justify-end text-xs text-gray-900">
                   {/* <p>{errorMessage}</p> */}
               </div>
           </div>
+          {
+            member
+            ?
+            <></>
+            :
+            <div className="flex items-center bg-white rounded-full px-2">
+              <RiLockPasswordFill className="text-xl" />
+			<input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" className="w-full px-4 py-3 rounded-full bg-white text-gray-800  outline-none active:bg-white" />
+            </div>  
+          }
           {
             member
             ?

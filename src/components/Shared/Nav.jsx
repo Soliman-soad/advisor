@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { FaDraftingCompass } from "react-icons/fa";
 import { StateManage } from "../../Context/StateContext";
+import { Link } from "react-router-dom";
 
 export const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,14 +41,14 @@ export const Nav = () => {
               </a>
             </li>
             <li>
-              <a
-                href="/"
+              <Link
+                to="/dashboard"
                 aria-label="Product pricing"
                 title="Product pricing"
                 className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
-                Pricing
-              </a>
+                Dashboard
+              </Link>
             </li>
             <li>
               <a
