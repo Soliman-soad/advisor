@@ -1,10 +1,13 @@
 import React from 'react';
 import DashboardContact from './DashboardContact';
+import User from '../User/User';
+import Admin from '../Admin/Admin';
 
 const Dashboard = () => {
     return (
         <div>
-            <DashboardContact/>
+            <Admin/>
+           <User/>
         </div>
     );
 };

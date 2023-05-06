@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaUserCog } from "react-icons/fa";
 import { GoLaw } from "react-icons/go";
+import DashboardContact from "../Dashboard/DashboardContact";
 const Admin = () => {
+  const [slot, setSlot] =useState(false);
   return (
     <div className="md:grid grid-cols-12 relative mt-16 md:mt-20">
       {/* admin Dashboard */}
@@ -14,47 +16,61 @@ const Admin = () => {
         </div>
         <div>
           <ul className="pt-2 pb-4 space-y-1 text-sm">
-            <li className="bg-gray-100 text-gray-900">
-              <a
-                rel="noopener noreferrer"
-                href="#"
+            <li className={slot ? "bg-gray-100 text-gray-900": "bg-gray-800 text-white"}>
+              <span
+              onClick={()=> setSlot(false)}
                 className="flex items-center p-2 space-x-3 rounded-md"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  className="w-5 h-5 fill-current text-gray-600"
+                  className="w-5 h-5 fill-current "
                 >
                   <path d="M68.983,382.642l171.35,98.928a32.082,32.082,0,0,0,32,0l171.352-98.929a32.093,32.093,0,0,0,16-27.713V157.071a32.092,32.092,0,0,0-16-27.713L272.334,30.429a32.086,32.086,0,0,0-32,0L68.983,129.358a32.09,32.09,0,0,0-16,27.713V354.929A32.09,32.09,0,0,0,68.983,382.642ZM272.333,67.38l155.351,89.691V334.449L272.333,246.642ZM256.282,274.327l157.155,88.828-157.1,90.7L99.179,363.125ZM84.983,157.071,240.333,67.38v179.2L84.983,334.39Z"></path>
                 </svg>
                 <span>Add Service</span>
-              </a>
+              </span>
             </li>
-            <li>
-              <a
-                rel="noopener noreferrer"
-                href="#"
+            <li className={!slot ? "bg-gray-100 text-gray-900": "bg-gray-800 text-white"}>
+              <span
+                onClick={()=> setSlot(true)}
                 className="flex items-center p-2 space-x-3 rounded-md"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  className="w-5 h-5 fill-current text-gray-600"
-                >
-                  <path d="M479.6,399.716l-81.084-81.084-62.368-25.767A175.014,175.014,0,0,0,368,192c0-97.047-78.953-176-176-176S16,94.953,16,192,94.953,368,192,368a175.034,175.034,0,0,0,101.619-32.377l25.7,62.2L400.4,478.911a56,56,0,1,0,79.2-79.195ZM48,192c0-79.4,64.6-144,144-144s144,64.6,144,144S271.4,336,192,336,48,271.4,48,192ZM456.971,456.284a24.028,24.028,0,0,1-33.942,0l-76.572-76.572-23.894-57.835L380.4,345.771l76.573,76.572A24.028,24.028,0,0,1,456.971,456.284Z"></path>
-                </svg>
-                <span>Search</span>
-              </a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M6 6.878V6a2.25 2.25 0 012.25-2.25h7.5A2.25 2.25 0 0118 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 004.5 9v.878m13.5-3A2.25 2.25 0 0119.5 9v.878m0 0a2.246 2.246 0 00-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0121 12v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6c0-.98.626-1.813 1.5-2.122" />
+</svg>
+
+                <span>Slots</span>
+              </span>
             </li>
           </ul>
         </div>
       </div>
+      {
+        slot
+        ?
+        <div className="col-span-9 mb-5 lg:mb-0 mx-auto">
+          {/* all slots */}
 
-      {/* add product form  */}
+        {/* Header of the User Dashboard */}
+        <div  className='h-40  relative flex items-center justify-center bg-gray-900/50'>                
+                <img src="https://images.unsplash.com/photo-1505664063603-28e48ca204eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGxhd3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" className='w-full h-full absolute object-fit -z-10' />
+                <h1 className='text-4xl text-white'>All Slot for consultant</h1>
+            </div>
+
+            {/* slots */}
+            <DashboardContact/>            
+            <DashboardContact/>            
+            <DashboardContact/> 
+        </div>
+        :
+        <>
+        {/* add product form  */}
       <div className="col-span-9 mb-5 lg:mb-0 mx-auto">
-        <h1 className="text-2xl font-semibold uppercase text-center py-5">
-          Service information
-        </h1>
+      <div  className='h-40  relative flex items-center justify-center bg-gray-900/50'>                
+                <img src="https://images.unsplash.com/photo-1505664063603-28e48ca204eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGxhd3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" className='w-full h-full absolute object-fit -z-10' />
+                <h1 className='text-4xl text-white'>Service Information</h1>
+            </div>
         <div className="lg:grid grid-cols-5 ">
           {/* product information  */}
           <div className="col-span-3 px-5 space-y-5">
@@ -160,6 +176,11 @@ const Admin = () => {
           <button type="submit" className="bg-slate-600 block text-center text-white w-28 mx-auto px-2 py-3 hover:bg-slate-900 text-lg font-semibold rounded-md">Submit</button>
         </div>
       </div>
+        </>
+      }
+      
+
+      
     </div>
   );
 };
