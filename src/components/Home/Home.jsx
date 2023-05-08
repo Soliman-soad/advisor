@@ -16,7 +16,6 @@ const Home = () => {
     
     return (
         <div className='space-y-20 '>
-
             <div>
             <SliderBanner/>
             <About/>
@@ -25,7 +24,6 @@ const Home = () => {
             <Expert/>
             <Testimonial></Testimonial>
             <Contact/>
-            <Dashboard/>
         </div>
     );
 };

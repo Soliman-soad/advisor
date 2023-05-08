@@ -13,32 +13,31 @@ export const Nav = () => {
             href="/"
             aria-label="Company"
             title="Company"
-            className="inline-flex items-center text-3xl text-white"
-            
+            className="inline-flex items-center text-3xl text-white"            
           >
             <FaDraftingCompass/>
             <span>dviser</span>
           </a>
           <ul className="items-center hidden space-x-8 lg:flex">
             <li>
-              <a
-                href="/"
-                aria-label="Our product"
-                title="Our product"
+              <Link
+                to="/"
+                aria-label="Home"
+                title="Home"
                 className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
-                Product
-              </a>
+                Home
+              </Link>
             </li>
             <li>
-              <a
-                href="/"
-                aria-label="Our product"
-                title="Our product"
+              <Link
+                to="/services"
+                aria-label="Service"
+                title="Service"
                 className="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
-                Features
-              </a>
+                Service
+              </Link>
             </li>
             <li>
               <Link

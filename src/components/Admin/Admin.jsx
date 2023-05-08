@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import { FaUserCog } from "react-icons/fa";
 import { GoLaw } from "react-icons/go";
+import { MdElectricalServices, MdOutlineAddBusiness, MdOutlineCorporateFare, MdRealEstateAgent } from "react-icons/md";
 import DashboardContact from "../Dashboard/DashboardContact";
+import { RiFundsBoxFill, RiHealthBookFill } from "react-icons/ri";
 const Admin = () => {
   const [slot, setSlot] =useState(false);
   return (
     <div className="md:grid grid-cols-12 relative mt-16 md:mt-20">
       {/* admin Dashboard */}
-      <div className=" p-3 space-y-2 w-full bg-gray-100 divide-y divide-gray-300 text-gray-800 col-span-3 min-h-screen hidden md:block">
+      <div className="col-span-3 min-h-screen hidden md:block">
+      <div className=" p-3 space-y-2 w-full bg-gray-100 divide-y divide-gray-300 text-gray-800 h-full">
         <div className="flex items-center p-2 space-x-4 ">
           <FaUserCog className="text-2xl" />
           <div>
@@ -46,6 +49,7 @@ const Admin = () => {
           </ul>
         </div>
       </div>
+      </div>
       {
         slot
         ?
@@ -66,14 +70,14 @@ const Admin = () => {
         :
         <>
         {/* add product form  */}
-      <div className="col-span-9 mb-5 lg:mb-0 mx-auto">
-      <div  className='h-40  relative flex items-center justify-center bg-gray-900/50'>                
+      <div className="col-span-9 mb-5 lg:mb-0 mx-auto w-full">
+      <div  className='h-40  relative flex items-center justify-center bg-gray-900/50 '>                
                 <img src="https://images.unsplash.com/photo-1505664063603-28e48ca204eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGxhd3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" className='w-full h-full absolute object-fit -z-10' />
                 <h1 className='text-4xl text-white'>Service Information</h1>
             </div>
-        <div className="lg:grid grid-cols-5 ">
+        <div>
           {/* product information  */}
-          <div className="col-span-3 px-5 space-y-5">
+          <div className=" px-5 space-y-5">
             <div className="flex flex-col">
               <label htmlFor="name" className="font-semibold mb-2">
                 Service Name
@@ -86,18 +90,18 @@ const Admin = () => {
                 className="bg-slate-100 px-2 py-1"
               />
             </div>
-            <div className="flex md:flex-row flex-col gap-5">
+            <div className="flex md:flex-row flex-col gap-5 justify-evenly">
               <div>
                 <label htmlFor="image1" className="font-semibold mb-2 mr-2">
                   Image 1
                 </label>
-                <input type="file" name="image1" id="image1" />
+                <input type="text" name="image1" id="image1" className="bg-slate-100 px-2 py-1" placeholder="Image 1 URL"/>
               </div>
               <div>
                 <label htmlFor="image2" className="font-semibold mb-2 mr-2">
                   Image 2
                 </label>
-                <input type="file" name="image2" id="image2" />
+                <input type="text" name="image2" id="image2" className="bg-slate-100 px-2 py-1" placeholder="Image 2 URL"/>
               </div>
             </div>
             <div className="flex flex-col">
@@ -113,10 +117,11 @@ const Admin = () => {
                 className="bg-slate-100 px-4 py-2"
               ></textarea>
             </div>
+           
           </div>
 
           {/* product type selection */}
-          <div className="col-span-2 mt-10 lg:mt-0">
+          <div className="mt-5 text-gray-800">
             <h1 className="text-xl uppercase font-semibold text-center">
               Choose Service type
             </h1>
@@ -128,10 +133,10 @@ const Admin = () => {
                 <div className="inline-flex">
                   <input type="radio" name="law" id="law" />
                   <div>
-                    <GoLaw className="text-7xl inline" />
+                    <MdOutlineCorporateFare className="text-5xl inline" />
                   </div>
                 </div>
-                <div className=" uppercase font-semibold">law</div>
+                <div className=" uppercase font-semibold">CORPORATE & SECURITIES</div>
               </label>
               <label
                 htmlFor="law1"
@@ -140,10 +145,10 @@ const Admin = () => {
                 <div className="inline-flex">
                   <input type="radio" name="law" id="law1" />
                   <div>
-                    <GoLaw className="text-7xl inline" />
+                    <MdRealEstateAgent className="text-5xl inline" />
                   </div>
                 </div>
-                <div className=" uppercase font-semibold">law</div>
+                <div className=" uppercase font-semibold">REAL ESTATE LAW</div>
               </label>
               <label
                 htmlFor="law2"
@@ -152,10 +157,10 @@ const Admin = () => {
                 <div className="inline-flex">
                   <input type="radio" name="law" id="law2" />
                   <div>
-                    <GoLaw className="text-7xl inline" />
+                    <RiHealthBookFill className="text-5xl inline" />
                   </div>
                 </div>
-                <div className=" uppercase font-semibold">law</div>
+                <div className=" uppercase font-semibold">HEALTH CARE LAW</div>
               </label>
               <label
                 htmlFor="law3"
@@ -164,22 +169,56 @@ const Admin = () => {
                 <div className="inline-flex">
                   <input type="radio" name="law" id="law3" />
                   <div>
-                    <GoLaw className="text-7xl inline" />
+                    <MdOutlineAddBusiness className="text-5xl inline" />
                   </div>
                 </div>
-                <div className=" uppercase font-semibold">law</div>
+                <div className=" uppercase font-semibold">ECOMMERCE LAW</div>
+              </label>
+              <label
+                htmlFor="law4"
+                className="border inline-flex flex-col justify-center items-center m-5  p-5 space-y-3 "
+              >
+                <div className="inline-flex">
+                  <input type="radio" name="law" id="law4" />
+                  <div>
+                    <RiFundsBoxFill className="text-5xl inline" />
+                  </div>
+                </div>
+                <div className=" uppercase font-semibold">PRIVATE FUND</div>
+              </label>
+              <label
+                htmlFor="law5"
+                className="border inline-flex flex-col justify-center items-center m-5  p-5 space-y-3 "
+              >
+                <div className="inline-flex">
+                  <input type="radio" name="law" id="law5" />
+                  <div>
+                    <GoLaw className="text-5xl inline" />
+                  </div>
+                </div>
+                <div className=" uppercase font-semibold">LENDING LAW</div>
+              </label>
+              <label
+                htmlFor="law6"
+                className="border inline-flex flex-col justify-center items-center m-5  p-5 space-y-3 "
+              >
+                <div className="inline-flex">
+                  <input type="radio" name="law" id="law6" />
+                  <div>
+                    <MdElectricalServices className="text-5xl inline" />
+                  </div>
+                </div>
+                <div className=" uppercase font-semibold text-center">POWER & ENERGY</div>
               </label>
             </div>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full mb-10">
           <button type="submit" className="bg-slate-600 block text-center text-white w-28 mx-auto px-2 py-3 hover:bg-slate-900 text-lg font-semibold rounded-md">Submit</button>
         </div>
       </div>
         </>
       }
-      
-
       
     </div>
   );

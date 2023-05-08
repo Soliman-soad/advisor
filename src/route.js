@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import Admin from "./components/Admin/Admin";
 import Dashboard from "./components/Dashboard/Dashboard";
 import AboutUs from "./components/AboutUs/AboutUs";
+import Services from "./components/Services/Services";
 
 export const route = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ export const route = createBrowserRouter([
             {
                 path: '/about',
                 element:<AboutUs/>
+            },
+            {
+                path: '/services',
+                element: <Services/>
             }
         ]
     }
