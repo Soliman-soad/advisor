@@ -11,7 +11,7 @@ const HomeServices = () => {
                 <div className=' w-[60px] rounded-lg h-full border-b-4 border-yellow-700 mx-auto mt-5'>
                 </div>
             </div>
-            <div className='grid grid-cols-3'>
+            <div className='grid grid-cols-1 md:grid-cols-3'>
             <ServiceCard/>
             <ServiceCard/>
             <ServiceCard/>

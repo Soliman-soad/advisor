@@ -6,6 +6,7 @@ import { MdDateRange } from "react-icons/md";
 const ServiceDetails = () => {
   const [bookTime, setBookTime] = useState(null);
   const [bookDate, setBookDate] = useState(null);
+  const time =[{time:"9.00-11.00", status:false},{time:"11.00-1.00", status:false}, {time:"2.00-3.00", status:true}, {time:"3.00-4.00", status:false}];
   const slotForm = (e) => {
     e.preventDefault();
     setBookTime(e.target.slot.value);
@@ -254,34 +255,20 @@ const ServiceDetails = () => {
                 />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <input
+                
+                {
+                    time.map((item,index)=> 
+                    <input
+                    index={index}
                   onClick={(e) => setBookTime(e.target.value)}
                   type="button"
-                  value="9.00am-11.00am"
-                  className="btn bg-sky-800 text-white py-2 px-3 rounded-md cursor-pointer hover:bg-gray-700 focus:bg-green-600"
+                  value={item.date}
+                  disabled={item.status}  
+                  className={`btn ${!item.status ? "bg-sky-800" : "bg-red-600"} text-white py-2 px-3 rounded-md cursor-pointer hover:bg-gray-700 focus:bg-green-600`}
                   name="slot"
                 />
-                <input
-                  onClick={(e) => setBookTime(e.target.value)}
-                  type="button"
-                  value="11.00am-1.00pm"
-                  className="btn bg-sky-800 text-white py-2 px-3 rounded-md cursor-pointer hover:bg-gray-700 focus:bg-green-600 "
-                  name="slot"
-                />
-                <input
-                  onClick={(e) => setBookTime(e.target.value)}
-                  type="button"
-                  value="2.00pm-3.00pm"
-                  className="btn bg-sky-800 text-white py-2 px-3 rounded-md cursor-pointer hover:bg-gray-700 focus:bg-green-600 "
-                  name="slot"
-                />
-                <input
-                  onClick={(e) => setBookTime(e.target.value)}
-                  type="button"
-                  value="3.00pm-4.00pm"
-                  className="btn bg-sky-800 text-white py-2 px-3 rounded-md cursor-pointer hover:bg-gray-700 focus:bg-green-600 "
-                  name="slot"
-                />
+                    )
+                }
               </div>
 
               <div className="mt-8 text-center">
